@@ -3,7 +3,7 @@
 :root{color-scheme:dark}body{margin:0;background:#0d0b14;color:#e8e3f3;font:15px/1.6 "Segoe UI",system-ui,sans-serif}
 main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:26px;margin-bottom:4px}h2{font-size:17px;margin-top:30px;color:#c4a5ff}h3{font-size:14.5px;margin:18px 0 4px;color:#e8e3f3}a{color:#b583ff}ul{padding-left:22px}li{margin:4px 0}code{font:13px Consolas,monospace;background:#1d1236;padding:1px 5px;border-radius:4px}
 .muted{color:#9b93ad;font-size:13px}</style></head><body><main><h1>Privacy Policy</h1>
-<p class="muted">NWG Moderation Tools · Effective October 17, 2026 · <a href="terms.html">Terms of Use</a></p>
+<p class="muted">NWG Moderation Tools · Effective October 20, 2026 · <a href="terms.html">Terms of Use</a></p>
 
 <p>This policy explains what information NWG Moderation Tools (“the site”, “we”, “us”) collects, why, how it is protected, and the choices you have. The site is an internal moderation tool run by Seef, Staff &amp; Community Manager, on behalf of Nova Wave Games (“NWG”), the studio behind the Roblox experiences <i>Saber Showdown</i> and <i>Saber Legends</i>. It is used only by approved NWG moderation staff and a small number of view-only guests.</p>
 <p>Questions or requests: <a href="mailto:seeeffbusiness@gmail.com">seeeffbusiness@gmail.com</a>.</p>
@@ -12,7 +12,7 @@ main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:26px;marg
 <ul>
   <li><b>Staff users</b>: NWG team members who log in with Discord and Roblox.</li>
   <li><b>Guest users</b>: people given a view-only username and password by the site owner.</li>
-  <li><b>Players in moderation records</b>: Roblox players who appear in NWG's ban records. They don't use the site, but the site stores information about them (see section 3).</li>
+  <li><b>Players and members in moderation records</b>: Roblox players and Discord members who appear in NWG's ban records or staff moderation logs. They don't use the site, but the site stores information about them (see section 3).</li>
 </ul>
 
 <h2>2. Information we collect about staff users</h2>
@@ -36,15 +36,18 @@ main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:26px;marg
 </ul>
 <h3>Created as you use the site</h3>
 <ul>
-  <li><b>Account details</b>: when you signed up, your approval status and role (Viewer, Admin or Owner), and when you last changed your name.</li>
+  <li><b>Account details</b>: when you signed up, your approval status and role (Moderator, Senior Mod, Admin or Owner), and when you last changed your name.</li>
   <li><b>Session records</b>: an encrypted (hashed) copy of your login token, its expiry, and when your access was last re-checked.</li>
   <li><b>Presence</b>: while the site is open and visible, your browser checks in about once a minute so staff can see who is online. We store only the time of your last check-in, not what you're viewing.</li>
   <li><b>Activity log</b>: logins, sign-ups, account changes, uploads of ban files and other admin actions, with your display name and your Discord and Roblox usernames.</li>
+  <li><b>Staff chat</b>: messages you send in the site's staff chat, with your display name, picture and the time sent. Everyone logged in to the site can read them. Messages are deleted automatically after 24 hours.</li>
+  <li><b>Your moderation logs</b>: if you post moderation logs in the staff Discord's log forums, the site shows them under your name (see section 3).</li>
 </ul>
 
 <h2>3. Information about players in moderation records</h2>
 <p>To enforce the rules of NWG's games, the site stores moderation records exported from NWG's own Roblox moderation tools: the player's Roblox user ID, username, ban date, ban status and length, public and private ban reasons, and whether alternate accounts were banned. To help moderators recognize returning players, it also stores usernames and past usernames looked up from Roblox's public user information.</p>
-<p>These records are visible only to approved staff and view-only guests. They aren't published, sold or shared outside NWG. Players with questions about a ban should use NWG's usual appeal process, or email the address above.</p>
+<p><b>Discord moderation logs (beta).</b> A bot on NWG's own Discord app reads two log forums in the NWG staff Discord server (in-game logs and Discord logs) and copies each log into the site so staff can search it. For each log the site stores: the text of the log message (including the player's Roblox username, or the member's Discord username and Discord user ID, the reason, the punishment and its length), the staff member who posted it, when it was posted or edited, and the names and links of any attached evidence. Evidence images and videos themselves are <b>not</b> copied; they're shown straight from Discord and stop showing if they're deleted there. When a log is edited or deleted in Discord, the site updates or removes its copy. The bot can only read the channels it's given access to; management channels aren't read.</p>
+<p>These records are visible only to approved staff (moderation logs) and view-only guests (ban records only). They aren't published, sold or shared outside NWG. Players with questions about a ban should use NWG's usual appeal process, or email the address above.</p>
 
 <h2>4. Information about guest users</h2>
 <p>For view-only guests we store the username, a salted, stretched hash of the password (never the password itself), when the account was created, the last login time, failed login attempts (to lock out guessing), and session records like those above. Guest logins appear in the activity log.</p>
@@ -61,7 +64,7 @@ main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:26px;marg
 <h2>6. Services that handle information for us</h2>
 <ul>
   <li><b>Cloudflare</b> hosts the site and its database. Information is stored and processed on Cloudflare's network, which may be outside your country.</li>
-  <li><b>Discord</b> and <b>Roblox</b> handle the logins under their own privacy policies.</li>
+  <li><b>Discord</b> and <b>Roblox</b> handle the logins under their own privacy policies. Discord also hosts the moderation logs and their evidence, which the site reads through its bot.</li>
   <li><b>GitHub Pages</b> hosts a one-line forwarding page that Roblox logins pass through on the way back to the site. GitHub may log that visit, as any website does, but the one-time login code it carries can't be used by anyone else.</li>
   <li>Profile pictures that come from Discord or Roblox load straight from their image servers, which see your browser's request.</li>
 </ul>
@@ -82,6 +85,8 @@ main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:26px;marg
   <li><b>Login records</b>: about 10 minutes.</li>
   <li><b>Activity log</b>: kept for staff accountability while the site is in use, and for no more than 2 years.</li>
   <li><b>Moderation records</b>: as long as NWG needs them to enforce its rules.</li>
+  <li><b>Discord moderation logs</b>: as long as the original log stays in the NWG staff Discord server. Deleting it there removes it from the site.</li>
+  <li><b>Staff chat messages</b>: 24 hours, then deleted automatically.</li>
 </ul>
 
 <h2>9. How we protect information</h2>
